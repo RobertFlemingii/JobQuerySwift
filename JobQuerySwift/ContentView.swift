@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack{
+                Image("jobquery-high-resolution-color-logo.png")
+                    .resizable()
+                    .frame(width: 32, height: 32)
+                    .padding(.leading, 16)
+                
+                Text("Hello, World!")
+                    .font(.largeTitle)
+                    .padding()
+            }
+            Spacer()
         }
-        .padding()
     }
 }
 
